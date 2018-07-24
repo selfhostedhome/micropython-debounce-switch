@@ -1,0 +1,5 @@
+open ttyUSB0
+put boot.py
+put main.py
+put ../switch.py
+ls
