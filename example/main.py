@@ -1,5 +1,6 @@
 import machine
 from switch import Switch
+import time
 
 def main():
 
@@ -7,7 +8,6 @@ def main():
     my_switch = Switch(switch_pin)
 
     while True:
-
         my_switch_new_value = False
 
         # Disable interrupts for a short time to read shared variable
@@ -24,5 +24,6 @@ def main():
                 print("Switch Opened")
             else:
                 print("Switch Closed")
+        time.sleep(1)
 
 main()
